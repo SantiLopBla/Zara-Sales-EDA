@@ -30,5 +30,5 @@ The analysis was conducted in the following stages:
 - Seaborn
 
 ### Author
-**Santiago López Blanco**
+**Santiago López Blanco,**
 **Data Science Engineering Student**
