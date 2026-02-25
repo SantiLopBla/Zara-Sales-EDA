@@ -1,32 +1,35 @@
-Zara Sales Exploratory Data Analysis
+#Zara Sales Exploratory Data Analysis
+##Project Overview:
+This project conducts an exploratory data analysis (EDA) on a Zara sales dataset to understand how pricing influences sales performance across product categories.
 
-This project performs an exploratory data analysis (EDA) on a Zara sales dataset to examine how pricing relates to sales performance across different product categories.
+The objective is to identify distribution patterns, revenue concentration, and demand behavior in order to extract business-relevant insights that could support pricing and portfolio decisions.
 
-After cleaning and validating the dataset, statistical analysis and visualizations were applied to identify:
+##Methodology
+The analysis was conducted in the following stages:
+-Data Cleaning
+-Validation of missing values
+-Basic data consistency checks
+-Descriptive Analysis
+-Total sales volume
+-Sales distribution across categories
+-Revenue calculation
+-Revenue Analysis
+-Revenue concentration by category
+-Price Sensitivity Analysis
+-Correlation between price and sales volume
+-Price range binning
+-Density visualization using hexbin plot
 
-Sales volume distribution across categories
+##Visualization
+-Category-level comparisons
+-Density plot to analyze price-volume behavior
 
-Revenue concentration patterns
+##Tools & Technologies
+-Python
+-Pandas
+-Matplotlib
+-Seaborn
 
-The relationship between price and demand
-
-Average sales behavior across price ranges
-
-The analysis reveals consistent price sensitivity across categories, with sales volume generally decreasing as price increases. Jackets emerge as the primary driver of both revenue and units sold, indicating a strong concentration within the product portfolio.
-
-The project aims to demonstrate practical data cleaning, exploratory analysis, and business-oriented insight generation using Python.
-
-Tools & Technologies
-
-Python
-
-Pandas
-
-Matplotlib
-
-Seaborn
-
-Author
-
-Santiago López Blanco
-Data Science Engineering Student
+##Author
+**Santiago López Blanco**
+**Data Science Engineering Student**
