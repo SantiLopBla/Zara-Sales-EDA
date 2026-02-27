@@ -1,34 +1,74 @@
 # Zara Sales Exploratory Data Analysis
-## Project Overview:
-- This project conducts an exploratory data analysis (EDA) on a Zara sales dataset to understand how pricing influences sales performance across product categories.
-- he objective is to identify distribution patterns, revenue concentration, and demand behavior in order to extract business-relevant insights that could support pricing and portfolio decisions.
+## Overview
+- This project presents a structured exploratory data analysis (EDA) of a Zara sales dataset to identify key business drivers, revenue concentration patterns, promotion impact, and price sensitivity across product categories.
+
+- The goal is to extract actionable insights that could support portfolio, pricing, and promotional decisions.
+
+## Key Findings
+### Revenue & Sales Concentration
+
+- Total Sales Volume: 22.2M units
+
+- Total Revenue: $884.6M
+
+- Jackets account for 55% of both total sales and total revenue
+
+- Jackets generate 3.41× more revenue than the second-best category
+
+- This indicates a strong dependence on a single product category.
+
+### Promotion Strategy
+
+- Jackets have the highest number of promotional items (4,697). However, promotion rates are similar across categories (≈40–43%). This suggests that jacket dominance is not solely driven by higher promotional intensity, but by stronger category demand and scale.
+
+### Category Performance
+
+- Sweaters and jackets perform slightly above the overall average in sales per item.
+
+- Jeans, shoes, and t-shirts perform slightly below average.
+
+- Since promotion exposure is consistent across categories, performance differences likely reflect intrinsic demand rather than promotional imbalance.
+
+- Price Sensitivity
+
+- Moderate negative correlation between price and sales volume (-0.34).
+
+- Lower-priced items show higher average sales.
+
+- Demand decreases gradually as prices increase, indicating moderate price sensitivity.
 
 ## Methodology
-The analysis was conducted in the following stages:
-- Data Cleaning
-- Validation of missing values
-- asic data consistency checks
-- Descriptive Analysis
-- Total sales volume
-- Sales distribution across categories
-- Revenue calculation
-- Revenue Analysis
-- Revenue concentration by category
-- Price Sensitivity Analysis
-- Correlation between price and sales volume
-- Price range binning
-- Density visualization using hexbin plot
 
-## Visualization
-- Category-level comparisons
-- Density plot to analyze price-volume behavior
+- Data cleaning and validation
 
-## Tools & Technologies
+- Sales and revenue concentration analysis
+
+- Promotion rate analysis
+
+- Correlation analysis
+
+- Price binning and density visualization
+
+- Comparative performance analysis
+
+## Tools
+
 - Python
+
 - Pandas
+
 - Matplotlib
+
 - Seaborn
 
-### Author
-**Santiago López Blanco,**
-**Data Science Engineering Student**
+- Jupyter Notebook
+
+## Strategic Insight
+
+- The business shows a high concentration risk, with over half of total revenue depending on jackets. While this reflects strong demand and effective positioning, it also highlights potential vulnerability if performance in this category declines.
+
+- Diversifying revenue drivers could improve long-term stability.
+
+*Author*
+*Santiago López Blanco*
+*Data Science Engineering Student*
