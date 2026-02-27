@@ -70,5 +70,4 @@
 - Diversifying revenue drivers could improve long-term stability.
 
 *Author*
-*Santiago López Blanco*
-*Data Science Engineering Student*
+*Santiago López Blanco, Data Science Engineering Student*
