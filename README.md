@@ -1,73 +1,94 @@
-# Zara Sales Exploratory Data Analysis
-## Overview
-- This project presents a structured exploratory data analysis (EDA) of a Zara sales dataset to identify key business drivers, revenue concentration patterns, promotion impact, and price sensitivity across product categories.
+# Zara Sales — Exploratory Data Analysis
 
-- The goal is to extract actionable insights that could support portfolio, pricing, and promotional decisions.
+Exploratory data analysis project on a Zara retail sales dataset to identify key business drivers, revenue concentration patterns, promotion impact, and price sensitivity across product categories. The goal is to extract actionable insights that could support portfolio, pricing, and promotional decisions.
+
+---
 
 ## Key Findings
-### Revenue & Sales Concentration
 
-- Total Sales Volume: 22.2M units
+- **Revenue concentration**: Jackets account for **55% of total revenue** ($487M out of $884.6M) and **55.6% of total sales volume** (12.3M out of 22.2M units)
+- **Dominance ratio**: Jackets generate **3.41× more revenue** than the second-ranked category
+- **Price sensitivity**: Moderate negative correlation between price and sales volume (**r = -0.34**) — demand decreases gradually as price increases
+- **Promotion parity**: Promotion rates are consistent across all categories (~40–43%), meaning jacket dominance reflects genuine demand, not promotional advantage
+- **Seasonal demand**: Autumn records the highest sales volume, followed by Winter, Spring, and Summer — demand peaks in colder seasons, aligned with the product mix
+- **Concentration risk**: Over half of total revenue depends on a single category — a vulnerability if jacket performance declines
 
-- Total Revenue: $884.6M
+---
 
-- Jackets account for 55% of both total sales and total revenue
+## Visualizations
 
-- Jackets generate 3.41× more revenue than the second-best category
+### Sales Volume by Category
+![Sales Volume](reports/figures/sales_volume_by_category.png)
 
-- This indicates a strong dependence on a single product category.
+### Revenue Distribution
+![Revenue Pie](reports/figures/sales_distribution_pie.png)
 
-### Promotion Strategy
+### Price Sensitivity
+![Price Density](reports/figures/sales_volume_vs_price_density.png)
 
-- Jackets have the highest number of promotional items (4,697). However, promotion rates are similar across categories (≈40–43%). This suggests that jacket dominance is not solely driven by higher promotional intensity, but by stronger category demand and scale.
+### Average Sales by Price Range
+![Price Range](reports/figures/avg_sales_by_price_range.png)
 
-### Category Performance
+### Category Performance vs Average
+![Pct Diff](reports/figures/pct_diff_from_avg_sales.png)
 
-- Sweaters and jackets perform slightly above the overall average in sales per item.
+### Promotion Rate by Category
+![Promo Rate](reports/figures/promotion_rate_by_category.png)
 
-- Jeans, shoes, and t-shirts perform slightly below average.
+---
 
-- Since promotion exposure is consistent across categories, performance differences likely reflect intrinsic demand rather than promotional imbalance.
+## Project Structure
 
-- Price Sensitivity
+```
+Zara-Sales-EDA/
+│
+├── data/
+│   └── raw/
+│       └── Business_sales_EDA.csv
+│
+├── reports/
+│   └── figures/                   # All charts saved as PNG
+│       ├── sales_volume_by_category.png
+│       ├── sales_distribution_pie.png
+│       ├── sales_volume_vs_price_density.png
+│       ├── avg_sales_by_price_range.png
+│       ├── pct_diff_from_avg_sales.png
+│       └── promotion_rate_by_category.png
+│
+├── analysis.ipynb                 # Full EDA notebook
+└── README.md
+```
 
-- Moderate negative correlation between price and sales volume (-0.34).
-
-- Lower-priced items show higher average sales.
-
-- Demand decreases gradually as prices increase, indicating moderate price sensitivity.
+---
 
 ## Methodology
 
-- Data cleaning and validation
+1. **Data cleaning** — column normalization, duplicate check, missing value imputation
+2. **Revenue and sales concentration analysis** — groupby aggregations by category
+3. **Promotion analysis** — promotion rate and impact on sales per category
+4. **Price sensitivity analysis** — correlation between price and sales volume per category
+5. **Seasonal analysis** — sales volume breakdown by season and category
+6. **Comparative performance** — percentage difference from overall average sales per category
 
-- Sales and revenue concentration analysis
+---
 
-- Promotion rate analysis
+## Tech Stack
 
-- Correlation analysis
+- **Language:** Python 3
+- **Data:** pandas, numpy
+- **Visualization:** matplotlib, seaborn
+- **Environment:** Jupyter Notebook
 
-- Price binning and density visualization
+---
 
-- Comparative performance analysis
+## Dataset
 
-## Tools
+Zara retail sales dataset — 21 product attributes including price, sales volume, category, season, and promotion status.
 
-- Python
+---
 
-- Pandas
+## Author
 
-- Matplotlib
-
-- Seaborn
-
-- Jupyter Notebook
-
-## Strategic Insight
-
-- The business shows a high concentration risk, with over half of total revenue depending on jackets. While this reflects strong demand and effective positioning, it also highlights potential vulnerability if performance in this category declines.
-
-- Diversifying revenue drivers could improve long-term stability.
-
-*Author*
-*Santiago López Blanco, Data Science Engineering Student*
+**Santiago López Blanco**
+Data Science Engineering student — Universidad Fidélitas, Costa Rica
+[GitHub](https://github.com/SantiLopBla) · [LinkedIn](https://www.linkedin.com/in/santiago-l%C3%B3pez-blanco-420886342/)
