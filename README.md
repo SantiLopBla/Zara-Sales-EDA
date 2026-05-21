@@ -7,11 +7,12 @@ Exploratory data analysis project on a Zara retail sales dataset to identify key
 ## Key Findings
 
 - **Revenue concentration**: Jackets account for **55% of total revenue** ($487M out of $884.6M) and **55.6% of total sales volume** (12.3M out of 22.2M units)
-- **Dominance ratio**: Jackets generate **3.41× more revenue** than the second-ranked category
-- **Price sensitivity**: Moderate negative correlation between price and sales volume (**r = -0.34**) — demand decreases gradually as price increases
-- **Promotion parity**: Promotion rates are consistent across all categories (~40–43%), meaning jacket dominance reflects genuine demand, not promotional advantage
-- **Seasonal demand**: Autumn records the highest sales volume, followed by Winter, Spring, and Summer — demand peaks in colder seasons, aligned with the product mix
-- **Concentration risk**: Over half of total revenue depends on a single category — a vulnerability if jacket performance declines
+- **Dominance ratio**: Jackets generate **3.41× more revenue** than the second-ranked category (sweaters at $142.9M)
+- **Price sensitivity**: Moderate negative correlation between price and sales volume (**r = -0.34**) — demand decreases gradually as price increases, though price alone does not explain performance differences since average prices are nearly identical (~$41–$43) across all categories
+- **Promotion parity**: Promotion rates are consistent across all categories (40.52%–42.86%), confirming that jacket dominance reflects genuine demand and scale, not disproportionate promotional activity
+- **Per-item performance**: Sweaters and jackets sell above the store average per item, while jeans, shoes, and t-shirts fall below — consistent with intrinsic demand differences rather than promotional advantage
+- **Seasonal demand**: Autumn records the highest sales volume (7.99M units), followed by Winter (6.04M), Spring (4.75M), and Summer (3.44M). Jackets are the top-selling category in every season without exception
+- **Concentration risk**: Over 55% of both revenue and volume depend on a single category — a significant vulnerability if jacket demand declines due to changing trends or market conditions
 
 ---
 
